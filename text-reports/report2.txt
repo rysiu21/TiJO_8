@@ -1,0 +1,30 @@
+
+> TiJO_08@1.0.0 stryker /home/kamil/Pulpit/TiJO_8
+> stryker run stryker.conf.js
+
+[2017-04-26 12:50:54.591] [INFO] ReporterOrchestrator - Detected that current console does not support the "progress" reporter, downgrading to "progress-append-only" reporter
+[2017-04-26 12:50:54.623] [INFO] InputFileResolver - Found 1 of 2 file(s) to be mutated.
+[2017-04-26 12:50:54.625] [INFO] SandboxCoordinator - Starting initial test run. This may take a while.
+[2017-04-26 12:50:55.102] [INFO] Stryker - Initial test run succeeded. Ran 9 tests in 0 seconds.
+[2017-04-26 12:50:55.140] [INFO] Stryker - 22 Mutant(s) generated
+[2017-04-26 12:50:55.150] [INFO] SandboxCoordinator - Creating 2 test runners (based on CPU count)
+
+Mutant survived!
+/home/kamil/Pulpit/TiJO_8/app/app.js: line 19:20
+Mutator: BinaryOperator
+-       for (var i = 0; i <= x; i++) {
++       for (var i = 0; i < x; i++) {
+
+Tests ran: 
+    returnOnlyLetter should return only letter
+    returnOnlyLetter should return only letter
+    returnOnlyLetter if return hex
+
+22 total mutants.
+1 mutants survived.
+1 mutants timed out.
+20 mutants killed.
+Ran 1.77 tests per mutant on average.
+Mutation score based on covered code: 95.45%
+Mutation score based on all code: 95.45%
+[2017-04-26 12:51:03.126] [INFO] Stryker - Done in 8 seconds.
